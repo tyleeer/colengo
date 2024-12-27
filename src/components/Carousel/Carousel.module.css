@@ -1,0 +1,15 @@
+.bannerImageContainer {
+    height: 240px;
+    width: 220px;
+    position: relative;
+    background-color: var(--cream-color);
+}
+
+.bannerImage {
+    object-fit: contain;
+    max-height: 75%;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+@media (min-width: 768px) {}
