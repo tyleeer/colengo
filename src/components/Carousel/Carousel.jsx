@@ -51,7 +51,7 @@ const Carousel = () => {
         <h2>CUSTOMERS FAVORITES</h2>
         <p>and get inspired</p>
       </div>
-      <div className="d-flex justify-content-center gap-3">
+      <div className="d-flex justify-content-center scrollable gap-3">
         {products.map((product, index) => {
           if (index === 1) {
             return (

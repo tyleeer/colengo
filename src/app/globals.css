@@ -124,6 +124,18 @@ a.active {
   transform: rotateY(180deg);
 }
 
+.scrollable {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .text-md-xxl {
       font-size: 4rem;
@@ -139,15 +151,5 @@ a.active {
 @media (max-width: 1024px) {
   .section:has(img) {
     max-width: none !important;
-  }
-
-  .bg-faded-white {
-    right: 50%;
-    /* background-color: #171717; */
-  }
-
-  .bg-faded-white.reverse {
-    left: 150%;
-    /* background-color: #171717; */
   }
 }

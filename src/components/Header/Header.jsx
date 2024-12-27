@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
-import styles from "./Header.module.css";
+import React from "react";
 
 const Header = () => {
   const collections = [
@@ -18,7 +16,7 @@ const Header = () => {
     <header className="container container-fluid section text-center">
       <h1 className="text-xl text-md-xxl">EXPLORE OUR COLLECTIONS</h1>
       <nav>
-        <ul className="navbar-nav d-flex flex-row justify-content-center gap-5 fs-4">
+        <ul className="navbar-nav d-flex flex-row justify-content-center gap-5 fs-4 scrollable">
           {collections.map((item, index) => {
             if (index === 0) {
               return (
